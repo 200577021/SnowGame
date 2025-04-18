@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000e70ee0c00b5ec3202fb81b10
+  m_ApplyToSortingLayers: 00000000e70ee0c00b5ec3202fb81b10917e85b775a45915
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 1288670305}
   - component: {fileID: 1288670304}
   m_Layer: 0
-  m_Name: Nebula
+  m_Name: Mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -809,7 +809,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1059057945
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5363ba5ff6a4d25418d986e793446fdb, type: 3}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 1382672533}
   - component: {fileID: 1382672534}
   m_Layer: 0
-  m_Name: Nebula (1)
+  m_Name: Clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -911,7 +911,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1059057945
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 630227a2121b4a243888619c45836138, type: 3}
@@ -1354,8 +1354,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7111483949582031532, guid: c3c8e2ea6a8c4ed46b55799c1855743b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111483949582031532, guid: c3c8e2ea6a8c4ed46b55799c1855743b, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111483949582031532, guid: c3c8e2ea6a8c4ed46b55799c1855743b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1215988079
       objectReference: {fileID: 0}
     - target: {fileID: 7466152992006929816, guid: c3c8e2ea6a8c4ed46b55799c1855743b, type: 3}
       propertyPath: m_LocalRotation.w

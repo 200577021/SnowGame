@@ -1,9 +1,14 @@
 using UnityEngine;
 
+   
+
 public class CollideWithBeamController : MonoBehaviour
 {
+
+     
     [Header("Explosion Object")]
     public GameObject explosionPrefab = null;
+    public GameObject explosionInstance = null;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,9 +17,11 @@ public class CollideWithBeamController : MonoBehaviour
             // Destroy the beam
             Destroy(other.gameObject);
             // Create the explosion
-            Instantiate(explosionPrefab, transform.position, transform.rotation);
+            explosionInstance = Instantiate(explosionPrefab, transform.position, transform.rotation);
             // Destroy the enemy
             Destroy(gameObject);
+            Destroy(explosionInstance, 1f);
+            GameManager.Instance.HandleFoodCollision("Food");
         }
     }
 }

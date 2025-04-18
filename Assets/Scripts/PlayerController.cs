@@ -8,7 +8,29 @@ public class PlayerController : MonoBehaviour
     public GameObject beamPrefab; // Reference to the beam prefab
     public Transform beamSpawnPoint; // Reference to the spawn point of the beam
     private Vector2 moveValue;
+        // Explosion Prefab variable
+    public GameObject explosionPrefab = null;
+    public GameObject explosionInstance = null;
+    private const string BombTag = "Bomb";
 
+    void OnCollisionEnter2D(Collision2D collidedObject)
+        {
+            //Destroy the collided object
+            Destroy(collidedObject.gameObject);
+            if (collidedObject.gameObject.CompareTag(BombTag))
+            {
+                GameManager.Instance.HandleBombCollision("Bomb");
+                Debug.Log("Bomb Detected");
+                // Explosion animation
+                // Add offset to the explosion position
+                Vector3 explosionPosition = new Vector3(transform.position.x-0.1f, transform.position.y+1f, transform.position.z);
+                // Instantiate the explosion prefab at the snake's position
+                explosionInstance = Instantiate(explosionPrefab, explosionPosition, transform.rotation);
+                // Destroy the explosion instance after 1 second
+                Destroy(explosionInstance, 1f);
+            }
+        }
+ 
     private void Awake()
     {
         // Set up references

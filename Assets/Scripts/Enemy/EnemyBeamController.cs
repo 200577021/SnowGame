@@ -16,3 +16,4 @@ public class EnemyBeamController : MonoBehaviour
         transform.Translate(direction * speed * Time.deltaTime);        
     }
 }
+

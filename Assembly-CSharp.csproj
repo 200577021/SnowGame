@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\Scripts\SineWaveMoveController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\DestroyThis.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
     <Compile Include="Assets\Third Party\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Free 2D Cartoon Parallax Background\Demo\Script\ParallaxBackground_0.cs" />
     <Compile Include="Assets\Scripts\MainMenuController.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBeamController.cs" />
   </ItemGroup>
   <ItemGroup>
